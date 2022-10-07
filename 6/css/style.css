@@ -274,11 +274,17 @@ body {
   border-radius: 5px;
 }
 
+.services-item:hover {
+  background-color: #3172b9;
+  border-color: #3172b9;
+}
+
 .services-item:not(:nth-child(4)) {
   margin-right: 30px;
 }
 
 .services-item-icon {
+  fill: #3172b9;
   margin-bottom: 20px;
 }
 
@@ -291,6 +297,10 @@ body {
   color: #1c1c1c;
 }
 
+.services-item:hover .services-item-title {
+  color: #fff;
+}
+
 .services-item-desc {
   margin: 0;
   text-align: center;
@@ -298,6 +308,14 @@ body {
   font-size: 14px;
   line-height: 150%;
   color: #787878;
+}
+
+.services-item:hover .services-item-desc {
+  color: #fff;
+}
+
+.services-item:hover .services-item-icon {
+  fill: #fff;
 }
 
 /*  articles  */
@@ -322,6 +340,60 @@ body {
   overflow: hidden;
   border: 1px solid #e4e4e4;
   border-radius: 5px;
+}
+
+.blog-preview-link {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.blog-preview-link:focus {
+  background-color: #3172b9;
+}
+
+.blog-preview-link:focus .blog-preview-title {
+  color: #fff;
+}
+
+.blog-preview-link:focus .blog-preview-desc {
+  color: #fff;
+}
+
+.blog-preview-link:focus .blog-preview-time {
+  color: #fff;
+}
+
+.blog-preview-link:hover {
+  background-color: #71a7e2;
+}
+
+.blog-preview-link:hover .blog-preview-title {
+  color: #fff;
+}
+
+.blog-preview-link:hover .blog-preview-desc {
+  color: #fff;
+}
+
+.blog-preview-link:hover .blog-preview-time {
+  color: #fff;
+}
+
+.blog-preview-link:active {
+  background-color: #0e3b6c;
+}
+
+.blog-preview-link:active .blog-preview-title {
+  color: #fff;
+}
+
+.blog-preview-link:active .blog-preview-desc {
+  color: #fff;
+}
+
+.blog-preview-link:active .blog-preview-time {
+  color: #fff;
 }
 
 .blog-preview-image {
@@ -479,6 +551,14 @@ body {
   font-size: 14px;
   line-height: 180%;
   color: #787878;
+}
+
+.contacts-item-link:focus {
+  outline: 1px solid #1c1c1c;
+}
+
+.contacts-item-link:hover {
+  color: #3172b9;
 }
 
 /*  join us  */
