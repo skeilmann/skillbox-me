@@ -1,0 +1,12 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
+{
+  "prettyhtml": {
+    "printWidth": 100, // No line exceeds 100 characters
+    "singleQuote": false // Prefer double quotes over single quotes
+  }
+}
