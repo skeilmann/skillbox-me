@@ -554,11 +554,16 @@ body {
 }
 
 .contacts-item-link:focus {
-  outline: 1px solid #1c1c1c;
+  outline: 1px solid #71A7E2;
 }
 
 .contacts-item-link:hover {
-  color: #3172b9;
+  color: #71A7E2;
+}
+
+.contacts-item-link:active {
+  outline: none;
+  color: #0E3B6C;
 }
 
 /*  join us  */
@@ -588,6 +593,24 @@ body {
   border-radius: 50px;
 }
 
+.form-input:nth-child(-n+2) {
+  margin-bottom: 19px;
+}
+
+.form-input:focus {
+outline: none;
+border-color: #71A7E2;
+background-color: rgba(113, 167, 226, 0.2);
+}
+
+.form-input:hover {
+  border-color: #71A7E2;
+}
+
+.form-input:active {
+  border-color: #0E3B6C;
+}
+
 .form-select {
   padding: 16px 28px;
   width: 251px;
@@ -595,6 +618,20 @@ body {
   opacity: 0.6;
   border: 1px solid #dadada;
   border-radius: 50px;
+}
+
+.form-select:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+}
+  
+.form-select:hover {
+  border-color: #71A7E2;
+}
+  
+.form-select:active {
+  border-color: #0E3B6C;
 }
 
 .form-textarea {
@@ -605,6 +642,20 @@ body {
   border-radius: 20px;
   height: 100%;
 }
+
+.form-textarea:focus {
+  outline: none;
+  border-color: #71A7E2;
+  background-color: rgba(113, 167, 226, 0.2);
+  }
+  
+  .form-textarea:hover {
+    border-color: #71A7E2;
+  }
+  
+  .form-textarea:active {
+    border-color: #0E3B6C;
+  }
 
 .form-top {
   justify-content: space-between;
@@ -696,30 +747,49 @@ body {
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
   width: 24px;
   height: 24px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-item:not(:last-child) {
   margin-right: 32px;
 }
 
+.social-link svg {
+  fill: #000;
+}
+
+.social-link-mail svg {
+  stroke: #000;
+  fill: transparent;
+}
+
+.social-link:focus {
+  outline-offset: 2px;
+  outline: 1px solid #71A7E2;
+}
+
+.social-link:hover svg {
+  fill: #71A7E2;
+}
+
+.social-link-mail:hover svg {
+  fill: transparent;
+  stroke: #71A7E2;
+}
+
+.social-link:active svg {
+  fill: #3172b9;
+}
+
+.social-link-mail:active svg {
+  fill: transparent;
+  stroke: #3172b9;
+}
+
 .footer-nav {
   margin-right: 56px;
-}
-
-.social-link-tw {
-  background-image: url(../img/twitter-logo.svg);
-}
-
-.social-link-linkedin {
-  background-image: url(../img/linkedin-logo.svg);
-}
-
-.social-link-mail {
-  background-image: url(../img/mail-logo.svg);
 }
