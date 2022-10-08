@@ -554,7 +554,7 @@ body {
 }
 
 .contacts-item-link:focus {
-  outline: 1px solid #1c1c1c;
+  outline: 1px solid red;
 }
 
 .contacts-item-link:hover {
