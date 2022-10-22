@@ -1,0 +1,81 @@
+.faq {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.faq__title {
+  margin-top: 11px;
+  margin-bottom: 34px;
+}
+
+.faq__item {
+  margin-top: -1px;
+  border-bottom: 1px solid var(--gray);
+  transition: border-color 0.3s;
+}
+
+.faq__item:first-child {
+  border-top: 1px solid var(--gray);
+}
+
+.faq__item:not(:first-child) {
+  border-top: 1px solid transparent;
+}
+
+.faq__item:focus-within,
+.faq__item:hover,
+.faq__item:active {
+  color: var(--orange);
+  border-color: var(--orange);
+}
+
+.faq__btn {
+  position: relative;
+  padding: 40px 90px 40px 0;
+  width: 100%;
+  text-align: left;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  transition: color 0.3s;
+}
+
+.faq__btn:focus-visible,
+.faq__btn:hover,
+.faq__btn:active {
+  color: var(--orange);
+  outline: none;
+}
+
+.faq__btn::after {
+  content: "";
+  position: absolute;
+  margin-top: -10px;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23CACACA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='black'/%3E%3C/svg%3E%0A");
+  transition: transform 0.5s, background-image 0.5s;
+}
+
+.faq__btn:focus-visible::after,
+.faq__btn:hover::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.faq__btn:active::after {
+  transform: rotate(45deg);
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.color-gray {
+  color: var(--gray);
+}
+
+.faq__descr {
+  max-width: 1003px;
+}
+
+.faq__text {
+  margin: 0;
+}
