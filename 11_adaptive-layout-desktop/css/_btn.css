@@ -31,7 +31,7 @@
   line-height: 28px;
 }
 
-.btn--colored:hover {
+.btn--colored:hover:not(:active) {
   background-color: var(--orange-light);
 }
 
@@ -44,7 +44,7 @@
   background-color: var(--orange-dark);
 }
 
-.btn--white:hover {
+.btn--white:hover:not(:active) {
   color: var(--white);
   border-color: var(--gray-light);
   background-color: var(--gray-light);
@@ -62,7 +62,7 @@
   background-color: var(--black);
 }
 
-.btn--transp:hover {
+.btn--transp:hover:not(:active) {
   background-color: var(--orange);
 }
 

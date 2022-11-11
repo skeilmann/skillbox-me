@@ -67,12 +67,12 @@
   transition: transform var(--short);
 }
 
-.nav__link:focus:not(:hover) {
+.nav__link:focus:not(:hover:not(:active)) {
   outline: 2px solid var(--orange);
   outline-offset: 5px;
 }
 
-.nav__link:hover::after {
+.nav__link:hover:not(:active)::after {
   transform: scaleX(1);
 }
 

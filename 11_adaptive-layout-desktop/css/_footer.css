@@ -56,7 +56,7 @@
   color: var(--gray);
 }
 
-.nav__footer:hover {
+.nav__footer:hover:not(:active) {
   color: var(--orange);
 }
 .nav__footer:focus:not(:active) {

@@ -23,7 +23,7 @@
   color: var(--gray);
 }
 
-.form__input:hover {
+.form__input:hover:not(:active) {
   background-color: var(--gray-light);
 }
 

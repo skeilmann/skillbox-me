@@ -23,7 +23,7 @@
   margin-right: 0;
 }
 
-.steps__link:hover {
+.steps__link:hover:not(:active) {
   color: var(--orange);
 }
 
