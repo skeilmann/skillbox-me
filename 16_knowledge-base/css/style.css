@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+
+@import url("https://unpkg.com/simplebar@5.3.9/dist/simplebar.css"); /*  costum scroll  */
+/* @import url("https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css");  costum choiches  */
+
+@import url("_global.css");
+@import url("_var.css");
+@import url("_header.css");
+@import url("_choices.css");
+@import url("_choices-list.css");
+@import url("_about.css");
+@import url("_media.css");
+@import url("_map.css");
+@import url("_tooltip.css");
+@import url("_book.css");
+@import url("_validate.css");

@@ -1,0 +1,9 @@
+.is-invalid {
+  border: 1px solid #ff5c00;
+}
+
+.is-label-invalid {
+  padding-left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+}

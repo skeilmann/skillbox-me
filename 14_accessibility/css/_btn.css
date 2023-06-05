@@ -1,0 +1,81 @@
+.btn {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 20px 38px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  border-radius: 16px;
+  transition: background-color var(--short);
+}
+
+.btn--colored {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn--white {
+  color: var(--black);
+  font-weight: 400;
+  border: 1px solid var(--black);
+  transition: color var(--short), background-color var(--short);
+}
+
+.btn--big {
+  padding: 25px 39px;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 28px;
+}
+
+.btn--colored:focus {
+  outline: none;
+  background-color: var(--orange-light);
+}
+
+.btn--colored:active {
+  background-color: var(--orange-dark);
+}
+
+.btn--white:focus {
+  color: var(--white);
+  outline: none;
+  border-color: var(--gray-light);
+  background-color: var(--gray-light);
+}
+
+.btn--white:active {
+  outline: none;
+  background-color: var(--black);
+}
+
+.btn--transp:focus {
+  outline: none;
+  background-color: var(--orange);
+}
+
+.btn--transp:active {
+  background-color: var(--orange-dark);
+  border-color: var(--orange-dark);
+}
+
+@media (any-hover: hover) {
+  .btn--colored:hover:not(:active) {
+    background-color: var(--orange-light);
+  }
+
+  .btn--white:hover:not(:active) {
+    color: var(--white);
+    border-color: var(--gray-light);
+    background-color: var(--gray-light);
+  }
+
+  .btn--transp:hover:not(:active) {
+    background-color: var(--orange);
+  }
+}

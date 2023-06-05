@@ -1,0 +1,41 @@
+.about__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: var(--bold);
+  font-size: 30px;
+  color: var(--white);
+}
+
+.about__desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 50px;
+  background-color: var(--white);
+  padding: 30px;
+  border-radius: var(--def-border-radius);
+}
+
+.about__wrapper {
+  padding: 20px 30px;
+  height: 310px;
+  width: 400px;
+  flex-shrink: 0;
+}
+
+.about__image {
+  max-height: 400px;
+  width: 50%;
+  background-image: url(../img/plan-zoo-vincennes.jpg);
+  /* background-position: center; */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.simplebar-content-wrapper {
+  overflow: auto;
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--accent-col);
+}

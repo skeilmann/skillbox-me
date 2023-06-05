@@ -1,0 +1,18 @@
+#myMap1 {
+  width: 460px;
+  height: 460px;
+  margin: 0 auto;
+}
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.map__wrap {
+  padding: 100px;
+  width: 100%;
+  background-image: linear-gradient(black, black), url("../img/hero_4.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: saturation;
+}

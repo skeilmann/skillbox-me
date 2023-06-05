@@ -1,0 +1,103 @@
+.faq__container {
+  margin-bottom: 45px;
+  padding-top: 61px;
+}
+
+.faq__title {
+  margin-bottom: 33px;
+}
+
+.faq__item {
+  margin-bottom: -1px;
+  border-bottom: 1px solid var(--gray);
+  transition: border-color 0.3s;
+}
+
+.faq__item:first-child {
+  border-top: 1px solid var(--gray);
+}
+
+.faq__item:not(:first-child) {
+  border-top: 1px solid transparent;
+}
+
+.faq__item:focus-within,
+.faq__item:active {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+.question-title {
+  margin: 0;
+}
+
+.faq__btn {
+  position: relative;
+  width: 100%;
+  padding: 40px 90px 40px 0;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  transition: color 0.3s;
+}
+
+.faq__btn:focus-visible,
+.faq__btn:active {
+  color: var(--orange);
+  outline: none;
+}
+
+.faq__btn::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23CACACA'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='black'/%3E%3C/svg%3E%0A");
+  transition: transform 0.5s, background-image 0.5s;
+}
+
+.faq__btn:focus-visible::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+}
+
+.faq__btn:active::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+  transform: rotate(45deg);
+  transform-origin: center;
+}
+
+.color-gray {
+  color: var(--gray);
+}
+
+.faq__content {
+  overflow: hidden;
+  max-width: 1003px;
+}
+
+.is-active .faq__btn::after {
+  transform: rotate(45deg);
+}
+
+.faq__text {
+  margin: 0;
+  color: var(--black);
+}
+
+@media (any-hover: hover) {
+  .faq__item:hover:not(:active) {
+    border-color: var(--orange);
+    color: var(--orange);
+  }
+
+  .faq__btn:hover:not(:active)::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cellipse cx='25' cy='25' rx='25' ry='25' fill='%23FF9900'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z' fill='white'/%3E%3C/svg%3E%0A");
+  }
+
+  .faq__btn:hover:not(:active) {
+    color: var(--orange);
+    outline: none;
+  }
+}

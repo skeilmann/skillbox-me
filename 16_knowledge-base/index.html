@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Зоопарк</title>
+  <link href="https://unpkg.com/simplebar@5.3.9/dist/simplebar.css" rel="stylesheet">
+  <link href="./css/style.css" rel="stylesheet">
+  <link href="./css/normalize.css" rel="stylesheet">
+
+  <script src="https://unpkg.com/simplebar@5.3.9/dist/simplebar.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js" defer></script>
+  <script src="./js/choices.js" defer></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript">
+  </script>
+  <script src="./js/map.js" defer></script>
+
+  <script src="https://unpkg.com/@popperjs/core@2" defer></script>
+  <script src="https://unpkg.com/tippy.js@6" defer></script>
+  <script src="./js/tooltip.js" defer></script>
+  <script src="./js/just-validate.min.js" defer></script>
+  <script src="./js/validation.js" defer></script>
+  <script src="./js/mask.js" defer></script>
+  <script src="./js/inputmask.min.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container header__container">
+      <span class="logo"></span>
+      <nav class="header__nav nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a class="nav__link" href="#hero">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#about">О нас</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#map">Адресс</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#book">Резервировать тур</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#caution">Предупреждения</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+
+      </div>
+    </section>
+
+    <section class="choices">
+      <div class="container">
+        <h2 class="title">Раскажите нам о ваших предпочтениях</h2>
+        <form class="choices__form" action>
+          <div class="choices__checkbox">
+            <h3 class="sub-title">Выберите любимых животных</h3>
+            <div class="choices__animal">
+              <h3 class="subtitle">Категории:</h3>
+              <label class="choices__label" for="animal1">
+                <input class="choices__check visually-hidden" id="animal1" type="checkbox">
+                Динозавры
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+              <label class="choices__label" for="animal2">
+                <input class="choices__check visually-hidden" id="animal2" type="checkbox" checked="checked">
+                Медведи
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+              <label class="choices__label" for="animal3">
+                <input class="choices__check visually-hidden" id="animal3" type="checkbox">
+                Косули
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+              <label class="choices__label" for="animal4">
+                <input class="choices__check visually-hidden" id="animal4" type="checkbox">
+                Лисы
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+              <label class="choices__label" for="animal5">
+                <input class="choices__check visually-hidden" id="animal5" type="checkbox">
+                Волки
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+              <label class="choices__label" for="animal6">
+                <input class="choices__check visually-hidden" id="animal6" type="checkbox">
+                Олени и лоси
+                <span class="costum-check" role="checkbox" aria-checked="true"></span>
+              </label>
+            </div>
+          </div>
+          <div class="choices__dropdown">
+            <h3 class="sub-title">Выберите тип валиера</h3>
+            <div class="choices__enclosure task">
+              <select class="select" name="select">
+                <option placeholder="">Материал</option>
+                <option value="Выбор_1">Древесина</option>
+                <option value="Выбор_2">Металл</option>
+                <option value="Выбор_3">Камень</option>
+                <option value="Выбор_4">Пластик</option>
+                <option value="Выбор_5">Композитный</option>
+                <option value="Выбор_6">Гипс</option>
+              </select>
+            </div>
+          </div>
+          <div class="btn__wrap">
+            <h3 class="sub-title--btn">Отправить</h3>
+            <button class="btn choices__btn" type="submit">Отправить</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section id="map">
+      <div class="container">
+        <h2 class="title">Наш адресс</h2>
+        <div class="map__wrap">
+          <div id="myMap1"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="container about__container">
+        <h2 class="title">О нас</h2>
+        <div class="about__desc">
+          <div class="about__wrapper" data-simplebar>
+            <p class="about__text">
+              Венсенский зоопарк был основан геологом Полем Лемуаном, в то время занимавшим должность директора парижского Музея естествознания, в ходе подготовки к открытию Колониальной
+              выставки 1931
+              года[1]. Сначала предполагалось, что это будет временная выставка экзотических животных. Однако успех зоосада был настолько велик, что было решено создать постоянный зоопарк,
+              открытие
+              которого состоялось тремя годами позже — в 1934 году. Он был создан по типу гамбургского зоопарка Хагенбека[1]. Зоопарк был устроен так, что решётки не привлекали особого
+              внимания и
+              создавалось ощущение пребывания в лоне дикой природы.
+              Зоопарк быстро приобрёл высокую популярность, поскольку парижане могли наблюдать диких животных, в том числе экзотических — слонов, жирафов, носорогов — в «естественной» среде.
+              Кроме того, в
+              нём были представлены редкие и находящиеся под угрозой виды, такие как окапи, купрей, морские слоны, гигантская панда, различные виды ночных лемуров[1].
+              C самого начала внимание посетителей привлекла огромная 65-метровая скала, расположенная в центре зоопарка. Помимо своей зрелищности, она также выполняла и практические
+              функции,
+              скрывая от
+              публики служебные помещения[1].
+              Однако с годами посещаемость Венсенского зоопарка снижалась — с 1 500 000 человек в 1968 году до 300 000 в 2005 году, так что было принято решение о его дорогостоящей
+              реконструкции, которая
+              началась в 2008 году и завершилась в апреле 2014 года.
+            </p>
+          </div>
+          <div class="about__image">
+            <!-- <img src="./img/plan-zoo-vincennes.jpg" alt="схематический вид на разные зоны зоопарка"> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div class="container book-container">
+        <h2 class="title">Заказать билеты</h2>
+        <form class="form book__form" accept="#">
+          <label class="form book__form-item">
+            <input class="input-name book__form-field" placeholder="Имя*" type="text" data-validate-field="name" name="name" id="name">
+          </label>
+          <label class="form book__form-item">
+            <input class="input-tel book__form-field" placeholder="Телефон*" type="tel" data-validate-field="phone" name="phone" id="phone">
+          </label>
+          <label class="form book__form-item">
+            <input class="input-mail book__form-field" placeholder="E-mail*" type="email" data-validate-field="email" name="email" id="email">
+          </label>
+          <button class="btn book__btn" type="submit">Заказать</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="caution" id="caution">
+      <div class="container">
+        <h2 class="title">Cautions</h2>
+        <div class="caution__wrap">
+          <div class="caution__box">
+            <p class="caution__text">
+              Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+              <button class="btn caution__btn" data-tippy-content="Глава 2, страница 176">i</button>
+            </p>
+          </div>
+          <div class="caution__box">
+            <p class="caution__text">
+              Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
+              <button class="btn caution__btn" data-tippy-content="Глава 2, страница 176 Глава 2, страница 176 Глава 2, страница 176 Глава 2, страница 176">i</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>

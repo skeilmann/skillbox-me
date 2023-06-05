@@ -1,0 +1,20 @@
+:root {
+  /* colors */
+  --white: #ffffff;
+  --acc-col: #3f2aff;
+  --light-gray: #e5e5e5;
+  --mid-gray: #85859b;
+  --gray: #666666;
+  --dark-gray: #212133;
+  --dark-gray2: #2F2C45;
+  --bg-col: #EDF0F9;
+
+  /* font */
+  --regular: 400;
+  --bold: 700;
+  --def-lh: 24px;
+  --def--fs: 16px;
+
+  /* other */
+  --def-border-rad: 20px;
+}

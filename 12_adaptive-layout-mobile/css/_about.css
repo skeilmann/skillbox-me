@@ -1,0 +1,121 @@
+.about__container {
+  padding-top: 0;
+}
+
+.about__wrap {
+  max-width: 1235px;
+  margin-bottom: 50px;
+}
+
+.about__desc {
+  margin: 0;
+}
+
+.about__wrapper {
+  display: flex;
+
+  gap: 32px;
+}
+
+.about__column {
+  width: calc(870 / 1770 * 100%);
+}
+
+.about__column:last-child {
+  margin-right: 0;
+}
+
+.about__column-small {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  gap: 32px;
+}
+
+.card-detail {
+  display: flex;
+  overflow: hidden;
+  align-items: flex-end;
+  min-height: 622px;
+  border-radius: var(--def-border-radius);
+  background-image: url("../img/about-art.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.card-detail__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5.7%;
+  border-radius: 32px;
+  background: rgba(0, 0, 0, 0.5);
+
+  gap: 32px;
+}
+
+.card-detail__text {
+  max-width: 455px;
+  margin: 0;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.btn--transp {
+  padding: 17px 36px;
+  border: 3px solid var(--orange);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--white);
+  text-align: center;
+}
+
+.card {
+  display: flex;
+  max-width: 870px;
+  min-height: 296px;
+  padding: 7% 12% 5% 7%;
+  border: 1px solid var(--gray);
+  border-radius: 32px;
+  background-size: 0;
+}
+
+.card::before {
+  content: "";
+  width: calc(190 / (870 - 60 - 118) * 100%);
+  max-width: 190px;
+  padding-top: calc(165 / (870 - 60 - 118) * 100%);
+  background-image: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.card-detail__subtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.card__subtitle {
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+}
+
+.card__content {
+  width: calc(452 / (870 - 60 - 140 - 60) * 100%);
+  padding-left: 50px;
+}
+
+.card__descr {
+  margin: 0;
+}

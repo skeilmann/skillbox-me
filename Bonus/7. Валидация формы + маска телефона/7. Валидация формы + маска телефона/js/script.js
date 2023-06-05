@@ -6,24 +6,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
   validation
     .addField('.name', [{
-        rule: 'minLength',
-        value: 3,
-        errorMessage: "Не достаточное количество символов"
-      },
-      {
-        rule: 'maxLength',
-        value: 5,
-        errorMessage: "Вы ввели больше чем положено"
-      }
+      rule: 'minLength',
+      value: 3,
+      errorMessage: "Не достаточное количество символов"
+    },
+    {
+      rule: 'maxLength',
+      value: 5,
+      errorMessage: "Вы ввели больше чем положено"
+    }
     ])
     .addField('.mail', [{
-        rule: 'required',
-        errorMessage: 'Поле нужно заполнить',
-      },
-      {
-        rule: 'email',
-        errorMessage: 'Вы не корректно ввели email',
-      }
+      rule: 'required',
+      errorMessage: 'Поле нужно заполнить',
+    },
+    {
+      rule: 'email',
+      errorMessage: 'Вы не корректно ввели email',
+    }
     ])
     .addField('.tel', [{
       rule: "function",

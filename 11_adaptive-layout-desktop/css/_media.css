@@ -1,0 +1,164 @@
+@media (max-width: 1366px) {
+  .nav__item {
+    margin-right: 50px;
+  }
+
+  .nav__list {
+    margin-right: 0;
+  }
+
+  .footer__column--center {
+    min-width: 420px;
+  }
+
+  .footer__column--right {
+    min-width: 230px;
+  }
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --container-padding: 40px;
+  }
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .header__container {
+    justify-content: space-between;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .header__logo {
+    margin: 0;
+    width: 150px;
+    height: 48px;
+  }
+
+  .header__menu {
+    display: none;
+  }
+
+  .hero__content {
+    width: 100%;
+  }
+
+  .hero__title {
+    margin-bottom: 15px;
+    font-size: 60px;
+    line-height: 73px;
+  }
+
+  .hero__desc {
+    margin-bottom: 61px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__article {
+    padding: 160px 77px;
+  }
+
+  .hero__article--1 {
+    background-image: url("../img/1024/article_1_1024.jpg");
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .about__wrap {
+    margin-top: -5px;
+    margin-bottom: 60px;
+  }
+
+  .about__column {
+    width: 100%;
+    max-width: none;
+  }
+
+  .card {
+    max-width: none;
+    padding: 7% 13% 4% 8%;
+  }
+
+  .card::before {
+    width: calc(190 / (870 - 60 - 100) * 100%);
+  }
+
+  .card-detail {
+    min-height: 640px;
+  }
+
+  .card-detail__content {
+    padding: 5.5%;
+  }
+
+  .steps__container {
+    padding-top: 28px;
+  }
+
+  .steps__link-wrapper {
+    margin-bottom: 50px;
+  }
+
+  .article__desc {
+    width: calc(437 * 100% / 924);
+  }
+
+  .article__img {
+    width: calc(437 * 100% / 924);
+    height: 689px;
+  }
+
+  .article__img--1 {
+    background-image: url("../img/1024/steps_img1_1024.jpg");
+  }
+
+  .faq {
+    padding-top: 21px;
+  }
+
+  .faq__btn {
+    padding: 39px 155px 39px 0;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+
+  .footer__container {
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+
+  .footer__column--left {
+    width: 100%;
+    max-width: 270px;
+  }
+
+  .footer__column--center {
+    width: 65%;
+    max-width: 541px;
+  }
+
+  .footer__column--right {
+    display: none;
+  }
+
+  .btn--long {
+    padding: 19px 38px;
+  }
+}
+
+@media (max-width: 768px) {
+}

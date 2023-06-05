@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* * {
+  outline: 1px solid red;
+} */
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+.page {
+  min-width: 320px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: var(--regular);
+  font-size: var(--def-fs);
+  line-height: var(--def-lh);
+  background-color: #ffffff;
+  word-wrap: break-word;
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: var(--container-padding);
+  padding-right: var(--container-padding-right);
+  padding-bottom: var(--container-padding-bottom);
+  padding-left: var(--container-padding-left);
+}
+
+h1 {
+  margin: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-style: normal;
+  font-weight: var(--regular);
+  font-size: 48px;
+  line-height: 59px;
+  color: var(--black);
+}

@@ -1,0 +1,46 @@
+.caution__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.caution__box {
+  width: 365px;
+  padding: 20px 80px 20px 30px;
+  background-color: var(--white);
+}
+
+.caution__text {
+  margin: 0;
+}
+
+.caution__btn {
+  display: inline;
+  padding: 0;
+  border-radius: 8px;
+  width: 16px;
+  height: 16px;
+  background-color: var(--light-gray);
+  font-size: 10px;
+  color: var(--white);
+}
+
+.caution__btn:hover {
+  background-color: var(--accent-col);
+}
+
+.tippy-box[data-theme~="caution__tooltip"] {
+  background-color: var(--gray);
+  color: var(--white);
+  border-radius: 0;
+  width: 163px;
+  text-align: center;
+  padding: 3px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.tippy-box[data-theme~="caution__tooltip"][data-placement^="top"]
+  > .tippy-arrow::before {
+  border-top-color: var(--gray);
+}
